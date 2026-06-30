@@ -1,0 +1,43 @@
+body{
+margin:0px;
+padding: 0px;
+font-family:Arial;
+background:#f5f7fa;
+}
+
+.container{
+max-width:800px;
+margin:auto;
+padding:20px;
+background-color: cadetblue;
+}
+
+section{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1,h2{
+color:#333;
+}
+
+.skills{
+display:flex;
+gap:50px;
+}
+
+.card{
+background:#a19fcb;
+color:white;
+padding:20px;
+width:120px;
+text-align:center;
+border-radius:10px;
+transition:0.3s;
+}
+.card:hover{
+  transform:scale(1.05);
+}
