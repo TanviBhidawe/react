@@ -1,14 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import  "./day1/App.jsx"
-import  "./day1/App.css"
+// import App from "./day1/App"; "./day1/App.jsx"
+// import  "./day1/App.css"
 
 // import Team from "./day2/team.jsx";
 // import "./day2/team.css";
 
+import App from "./day3/course.jsx";
+
 ReactDOM.createRoot(
 document.getElementById("root")
 ).render(
-// <Team />
+// <Team/>
+// {/* <App/> */}
 <App/>
+
 );
