@@ -7,7 +7,8 @@ import ReactDOM from "react-dom/client";
 // import "./day2/team.css";
 
 // import App from "./day3/course.jsx";
-import App from "./day4/App.jsx";
+// import App from "./day4/App.jsx";
+import App from "./day5/mordern.jsx";
 
 ReactDOM.createRoot(
 document.getElementById("root")
@@ -15,6 +16,7 @@ document.getElementById("root")
 // <Team/>
 // {/* <App/> */}
 // {/* <App/> */}
+//<App/>
 <App/>
 
 );
