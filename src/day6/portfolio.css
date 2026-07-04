@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #cedaed;
+    color: #333;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    color: #84a7cf;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-links a:hover{
+    color: #0077ff;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    min-height: 90vh;
+}
+
+.hero-text{
+    width: 50%;
+}
+
+.hero-text h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero-text h3{
+    color: #0077ff;
+    margin-bottom: 20px;
+}
+
+.hero-text p{
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-btns{
+    display: flex;
+    gap: 20px;
+}
+
+.btn1,
+.btn2{
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn1{
+    background: #0077ff;
+    color: white;
+}
+
+.btn2{
+    background: white;
+    border: 2px solid #0077ff;
+    color: #0077ff;
+}
+
+.btn1:hover,
+.btn2:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.hero-image img{
+    width: 300px;
+    border-radius:20px;
+}
+.hero-image:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+
+}
+
+.about,.skills,.contact{
+    padding: 80px;
+    text-align: center;
+}
+
+.section-text{
+    margin: 20px auto 40px;
+    max-width: 700px;
+    line-height: 1.7;
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: rgb(175, 178, 202);
+    padding: 25px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+.card:hover{
+    transform:translatey(-5px);
+    transition:0.3s;
+}
+.card h3{
+    color: #0077ff;
+    margin-bottom: 15px;
+}
+.skills-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+
+.contact-form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.contact-form button{
+    padding: 12px;
+    background: #ada6c3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover{
+    background: #97b3d6;
+}
+
+
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-text{
+        width: 100%;
+    }
+
+    .hero-btns{
+        justify-content: center;
+    }
+
+    .hero-image img{
+        width: 220px;
+        margin-bottom: 30px;
+    }
+
+    .about,.skills,.contact{
+        padding: 50px 20px;
+    }
+}
