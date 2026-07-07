@@ -68,7 +68,7 @@ function Student() {
       <div className="student-list">
         {students.map((student) => (
           <StudentCard
-            name={student.id}
+            key={student.id}
             student={student}
             Attendance={Attendance}
             removeStudent={removeStudent} />
