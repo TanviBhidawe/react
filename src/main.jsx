@@ -14,8 +14,9 @@ import ReactDOM from "react-dom/client";
 // import App from "./day6/portfolio.jsx";
 //week6
 // import Student from "./week6/day1/student.jsx";
-import JobPortal from "./week6/day2/jobportal.jsx";
-
+// import JobPortal from "./week6/day2/jobportal.jsx";
+// import News from "./week6/day3/news.jsx";
+import Product from "./week6/day4/product";
 ReactDOM.createRoot(
 document.getElementById("root")
 ).render(
@@ -27,6 +28,7 @@ document.getElementById("root")
 //<App/>
 //week6
 //<Student/>
-<JobPortal/>
-
+//<JobPortal/>
+//<News/>
+<Product/>
 );
