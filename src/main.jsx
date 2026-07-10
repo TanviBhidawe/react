@@ -5,23 +5,25 @@ import ReactDOM from "react-dom/client";
 // import App from "./day1/App"; "./day1/App.jsx"
 // import  "./day1/App.css"
 
-// import Team from "./day2/team.jsx";
-// import "./day2/team.css";
+// import Team from "./week5/day2/team.jsx";
+// import "./week5/day2/team.css";
 
-// import App from "./day3/course.jsx";
-// import App from "./day4/App.jsx";
-// import App from "./day5/mordern.jsx";
-// import App from "./day6/portfolio.jsx";
+//  import App from "./week5/day3/course.jsx";
+//import App from "./week5/day4/App.jsx";
+//import App from "./week5/day5/mordern.jsx";
+//import App from "./week5/day6/portfolio.jsx";
 //week6
 // import Student from "./week6/day1/student.jsx";
 // import JobPortal from "./week6/day2/jobportal.jsx";
 // import News from "./week6/day3/news.jsx";
-import Product from "./week6/day4/product";
+ //import Product from "./week6/day4/product";
+ import Shop from "./week6/day5/shop.jsx"
+
 ReactDOM.createRoot(
 document.getElementById("root")
 ).render(
     //week5
-// <Team/>
+ //<Team/>
  //<App/> 
 //<App/> 
 //<App/>
@@ -30,5 +32,6 @@ document.getElementById("root")
 //<Student/>
 //<JobPortal/>
 //<News/>
-<Product/>
+//<Product/>
+<Shop/>
 );
