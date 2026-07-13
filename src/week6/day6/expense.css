@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #5d6cb1, #9d8ead);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.form input,
+.form select ,.all{
+  flex: 1;
+  min-width: 200px;
+  height: 55px;
+  padding: 0 18px;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  transition: all .3s ease;
+}
+
+
+.form input:hover,
+.form select:hover ,.all:hover{
+    transition: 0.3s;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0,0,0,.18);
+}
+
+.form input:focus,
+.form select:focus {
+  outline: none;
+  border-color: #b2e6f4;
+  box-shadow: 0 0 0 5px rgba(0,198,255,.2);
+  transform: translateY(-2px);
+}
+
+.form select ,.all{
+  appearance: none;
+  cursor: pointer;  
+  background-size: 7px 7px;
+  background-repeat: no-repeat;
+
+}
+
+.form button {
+    
+  height: 55px;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.form button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,114,255,.4);
+}
+
+select {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.expense-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px;
+  border-radius: 15px;
+  background: rgba(255,255,255,.15);
+  backdrop-filter: blur(8px);
+  transition: .3s;
+  border-left: 6px solid #00e5ff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0,0,0,.25);
+}
+
+.card h3 {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #ececec;
+  margin: 4px 0;
+}
+
+.card button {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.card button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 18px rgba(177, 126, 117, 0.5);
+}
+
+
+@media(max-width:768px){
+
+  body{
+    padding:15px;
+  }
+
+  .container{
+    padding:20px;
+  }
+
+  .form{
+    flex-direction:column;
+  }
+
+  .form input,
+  .form select,
+  .form button{
+    width:100%;
+  }
+
+  .card{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+  }
+
+  .card button{
+    width:100%;
+  }
+}

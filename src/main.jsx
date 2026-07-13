@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+
 
 //week5
 // import App from "./day1/App"; "./day1/App.jsx"
@@ -13,11 +15,14 @@ import ReactDOM from "react-dom/client";
 //import App from "./week5/day5/mordern.jsx";
 //import App from "./week5/day6/portfolio.jsx";
 //week6
-// import Student from "./week6/day1/student.jsx";
-// import JobPortal from "./week6/day2/jobportal.jsx";
-// import News from "./week6/day3/news.jsx";
+//import Student from "./week6/day1/student.jsx";
+//import JobPortal from "./week6/day2/jobportal.jsx";
+//import News from "./week6/day3/news.jsx";
  //import Product from "./week6/day4/product";
- import Shop from "./week6/day5/shop.jsx"
+ //import Shop from "./week6/day5/shop.jsx"
+ //import Expense from "./week6/day6/expense";
+ //week7
+ import Company from "./week7/day1/company";
 
 ReactDOM.createRoot(
 document.getElementById("root")
@@ -33,5 +38,10 @@ document.getElementById("root")
 //<JobPortal/>
 //<News/>
 //<Product/>
-<Shop/>
+//<Shop/>
+//<Expense/>
+<BrowserRouter>
+<Company/>
+</BrowserRouter>
+
 );
