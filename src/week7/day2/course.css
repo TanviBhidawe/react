@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+  color: #222;
+}
+.navbar {
+  background: #111827;
+  color: white;
+  padding: 18px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar h2 {
+  color: #fbbf24;
+  font-size: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fbbf24;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(to right, #111827, #1f2937);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+  color: #fbbf24;
+}
+
+.hero p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  color: #e5e7eb;
+}
+
+.hero button {
+  margin-top: 35px;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 30px;
+  background: #fbbf24;
+  color: #111827;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #f59e0b;
+  transform: translateY(-4px);
+}
+
+.about {
+  padding: 70px;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #111827;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border-top: 5px solid #fbbf24;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.course-container {
+  padding: 60px;
+}
+
+.course-container h1 {
+  text-align: center;
+  font-size: 42px;
+  color: #111827;
+  margin-bottom: 40px;
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.course-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid #fbbf24;
+  transition: 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+}
+
+.course-card h2 {
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.course-card p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.course-card button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: #fbbf24;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.course-card button:hover {
+  background: #fbbf24;
+  color: #111827;
+}
+
+.course-details {
+  width: 70%;
+  margin: 50px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.course-details h1 {
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.course-details h3 {
+  color: #f59e0b;
+  margin-bottom: 20px;
+}
+
+.course-details p {
+  margin: 15px 0;
+  line-height: 1.8;
+}
+
+.course-details button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: #fbbf24;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.course-details button:hover {
+  background: #fbbf24;
+  color: #111827;
+}
+
+.contact-container {
+  width: 450px;
+  margin: 60px auto;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+  text-align: center;
+  color: #111827;
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 18px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #fbbf24;
+}
+
+.contact-form button {
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: #fbbf24;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background: #fbbf24;
+  color: #111827;
+}
+.course-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+
+}

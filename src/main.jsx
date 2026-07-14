@@ -22,7 +22,8 @@ import { BrowserRouter } from "react-router-dom";
  //import Shop from "./week6/day5/shop.jsx"
  //import Expense from "./week6/day6/expense";
  //week7
- import Company from "./week7/day1/company";
+//  import Company from "./week7/day1/company";
+import App from "./week7/day2/app";
 
 ReactDOM.createRoot(
 document.getElementById("root")
@@ -41,7 +42,7 @@ document.getElementById("root")
 //<Shop/>
 //<Expense/>
 <BrowserRouter>
-<Company/>
+<App/>
 </BrowserRouter>
 
 );
