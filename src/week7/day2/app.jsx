@@ -9,7 +9,7 @@ import "./course.css";
 function Navbar() {
   return (
     <nav className="navbar">
-      <h2>CourseHub</h2>
+      <h2>CourseCode</h2>
 
       <div className="nav-links">
         <Link to="/">Home</Link>
