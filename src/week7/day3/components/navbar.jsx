@@ -6,7 +6,6 @@ function Navbar(){
     localStorage.getItem("adminName") || "Admin"
   );
 
-
   useEffect(() => {
 
     const updateName = () => {
